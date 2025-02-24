@@ -2,15 +2,15 @@ package stash;
 /*
  * to test stashing
  */
-class  TemplateImplemetation {
+class  NewFileImplemetation {
     String display(){
-        String s = "Find solutions";
+        String s = "This is to stash";
         return s;
     }
 }
-public class Template {
+public class NewFile {
     public static void main() {
-        TemplateImplemetation objvar = new TemplateImplemetation();
+        NewFileImplemetation objvar = new NewFileImplemetation();
         System.out.println(objvar.display() );
     }
 }
