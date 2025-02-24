@@ -9,7 +9,7 @@ class  TemplateImplemetation {
     }
 }
 public class Template {
-    public static void main() {
+    public static void main(String args[]) {
         TemplateImplemetation objvar = new TemplateImplemetation();
         System.out.println(objvar.display() );
     }

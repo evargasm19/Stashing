@@ -9,7 +9,7 @@ class  NewFileImplemetation {
     }
 }
 public class NewFile {
-    public static void main() {
+    public static void main(String args[]) {
         NewFileImplemetation objvar = new NewFileImplemetation();
         System.out.println(objvar.display() );
     }
