@@ -8,12 +8,9 @@ class  NewFileImplemetation {
         String s = "This is to stash";
         return s;
     }
-<<<<<<< Updated upstream
 /*     public void vanishing(){
         System.out.println("This message must be vanished");
     } */
-=======
->>>>>>> Stashed changes
     public void vanishing(){
         System.out.println("This message must be vanished");
     }
