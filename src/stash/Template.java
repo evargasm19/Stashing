@@ -12,6 +12,8 @@ class  TemplateImplemetation {
     }
     public void hardWork(){
         System.out.println("HARDWORK");
+    public void eyevee(){
+       System.out.println("!STASHING"); 
     }
 }
 public class Template {
