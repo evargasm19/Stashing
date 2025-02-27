@@ -1,11 +1,14 @@
 package stash;
-/*
+/**
  * to test stashing
  */
 class  TemplateImplemetation {
     String display(){
         String s = "Find solutions";
         return s;
+    }
+    public void disappearing(){
+        System.out.println("This message is to appear and disappear");
     }
 }
 public class Template {
