@@ -10,6 +10,9 @@ class  TemplateImplemetation {
     public void disappearing(){
         System.out.println("This message is to appear and disappear");
     }
+    public void hardWork(){
+        System.out.println("HARDWORK");
+    }
 }
 public class Template {
     public static void main(String args[]) {
