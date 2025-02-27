@@ -11,6 +11,9 @@ class  NewFileImplemetation {
 /*     public void vanishing(){
         System.out.println("This message must be vanished");
     } */
+    public void vanishing(){
+        System.out.println("This message must be vanished");
+    }
 }
 //this is a comment line.
 public class NewFile {

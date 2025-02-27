@@ -1,32 +1,0 @@
-match ErrorMsg /\%>80v.\+/
-se wm=0
-syntax keyword myKeywords abstract continue for new switch assert default goto package synchronized boolean do if private this break double implements protected throw byte else import public throws case enum instanceof return transient catch extends int short try char final interface static void class finally long strictfp volatile const float native super while
-syntax keyword myMethods out 
-syntax match mySymbols "[[(),+-\.]]"
-syntax match myBraces "[{}]"
-syntax match mySemicolon_equal "[;=]"
-syntax region myJavaDoc start=/\/\*\*/ end=/\*\// contains=myKeywords
-syntax region myCommentBlock start=/\/\* / end=/ \*\//
-syntax match MyCommentLine "//.*"
-syntax match MyString /"[^"]*"/
-highlight myKeywords ctermfg=Cyan guifg=Cyan
-highlight myMethods ctermfg=Magenta guifg=Magenta
-highlight mySymbols ctermfg=White guifg=White
-highlight myBraces ctermfg=Green guifg=Green
-highlight mySemicolon_equal ctermfg=LightRed guifg=LightRed
-highlight myJavaDoc ctermfg=LightYellow guifg=LightYellow
-highlight myCommentBlock ctermfg=DarkGray guifg=DarkGray
-highlight MyCommentLine ctermfg=DarkGray guifg=DarkGray
-highlight MyString ctermfg=LightMagenta guifg=LightMagenta
-highlight Normal ctermfg=White ctermbg=Black
-ab syso System.out.println("");2hi
-ab jd /** **/ka 
-ab cl //a
-map ,r q:
-map ,m I/** **/Iclass Implemetation {}Ipublic class className {}O	public static void main(String args[]) {}2k9l
-map ,jd I/** **/ka 
-map ,cl i//a
-map ,p iSystem.out.println("");2hi
-vnoremap ,cb :<C-u>'<s:^:\/\* ::<C-u>'>s:$: \*\/:
-vnoremap ,ub :<C-u>'<s:\/\* :::<C-u>'>s: \*\/::
-map ,j :source .javaOptions
